@@ -46,6 +46,7 @@
                         <li>DC Power Visa</li>
                     </ul>
                 </div>
+                <img src="../assets/img/dc-logo-bg.png" alt="Logo DC">
             </div>
         </section>
         <section class="second">
@@ -62,11 +63,6 @@
                         <li><img src="../assets/img/footer-pinterest.png" alt="Logo facebook"></li>
                         <li><img src="../assets/img/footer-periscope.png" alt="Logo facebook"></li>
                     </ul>
-
-
-
-
-
                 </div>
 
             </div>
@@ -90,6 +86,7 @@ footer {
 .principal {
     background: url("../assets/img/footer-bg.jpg");
     background-size: cover;
+    overflow: hidden;
 }
 
 .second {
@@ -104,7 +101,9 @@ div .container {
 
 .list {
     display: flex;
+    position: relative;
     color: gray;
+
 
     ul {
         margin-right: 2rem;
@@ -121,6 +120,13 @@ div .container {
             color: $primary_color;
             cursor: pointer;
         }
+    }
+
+    img {
+        right: 0;
+        position: absolute;
+        height: 400px;
+
     }
 }
 
