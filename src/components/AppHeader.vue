@@ -99,7 +99,7 @@ section {
 img {
     height: 70px;
     display: $display_block;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 nav {
