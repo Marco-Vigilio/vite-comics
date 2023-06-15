@@ -1,17 +1,19 @@
 <template>
     <header>
-        <div class="contain">
+        <section>
             <div>
                 <img src="../assets/img/dc-logo.png" alt="Logo DC">
             </div>
             <nav>
                 <ul>
                     <li v-for="element in navBarList">
-                        {{ element.text }}
+                        <a v-bind:class="element.active ? 'active' : 'no_active'" href="#">
+                            {{ element.text }}
+                        </a>
                     </li>
                 </ul>
             </nav>
-        </div>
+        </section>
     </header>
 </template>
 <script>
@@ -70,17 +72,54 @@ export default {
                     active: false,
                 },
             ],
+            active: "active",
         }
     },
-
-    methods: {
-        getImagePath: function (img) {
-            return new URL('./');
-        },
-    }
 }
 </script>
 <style lang="scss" scoped>
 @use '../styles/partials/mixins' as *;
 @use '../styles/partials/variables' as *;
+
+.active {
+    color: $active_color;
+    border-bottom: 5px solid $active_color;
+}
+
+.no_active {
+    color: $no_active_color;
+}
+
+section {
+    @include contain;
+    @include flex_bet;
+    font-family: 'Roboto Mono', monospace;
+    padding: 1rem 0;
+}
+
+img {
+    height: 70px;
+    display: block;
+}
+
+nav {
+    ul {
+        display: $display_flex;
+        height: 100%;
+
+        li {
+            @include flex_center;
+            font-size: .7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 .8rem;
+
+            a {
+                @include flex_center;
+                height: 100%;
+            }
+
+        }
+    }
+}
 </style>
