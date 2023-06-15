@@ -93,13 +93,12 @@ export default {
 section {
     @include contain;
     @include flex_bet;
-    font-family: 'Roboto Mono', monospace;
-    padding: 1rem 0;
+    font-family: $font;
 }
 
 img {
     height: 70px;
-    display: block;
+    display: $display_block;
 }
 
 nav {
@@ -109,10 +108,7 @@ nav {
 
         li {
             @include flex_center;
-            font-size: .7rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin: 0 .8rem;
+            @include navbar_font_characters;
 
             a {
                 @include flex_center;
