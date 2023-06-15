@@ -8,6 +8,8 @@ export default {
     name: 'AppMain',
 }
 </script>
-<style lang="">
-    
+<style lang="scss">
+main {
+    background-color: rgb(99, 99, 99);
+}
 </style>

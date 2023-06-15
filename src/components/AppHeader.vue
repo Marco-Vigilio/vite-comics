@@ -87,7 +87,7 @@ export default {
 }
 
 .no_active {
-    color: $no_active_color;
+    color: $black_color;
 }
 
 section {
@@ -99,6 +99,7 @@ section {
 img {
     height: 70px;
     display: $display_block;
+    margin: 1rem;
 }
 
 nav {
