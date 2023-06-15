@@ -82,8 +82,8 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .active {
-    color: $active_color;
-    border-bottom: 5px solid $active_color;
+    color: $light_blue_color;
+    border-bottom: 5px solid $light_blue_color;
 }
 
 .no_active {
