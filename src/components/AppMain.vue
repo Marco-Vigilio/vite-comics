@@ -2,7 +2,9 @@
     <main>
         <section>
             <h1> --&gt; Content goes here &lt;-- </h1>
-            <Card v-for="element in array" :object=element />
+            <div class="items">
+                <Card v-for="element in array" :object=element />
+            </div>
         </section>
     </main>
 </template>
@@ -106,5 +108,12 @@ main {
 section {
     @include contain;
     @include distance_section;
+}
+
+.items {
+    background-color: aqua;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 </style>
