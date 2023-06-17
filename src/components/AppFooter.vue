@@ -58,10 +58,10 @@
                     <span>FOLLOW US</span>
                     <ul>
                         <li><img src="../assets/img/footer-facebook.png" alt="Logo facebook"></li>
-                        <li><img src="../assets/img/footer-twitter.png" alt="Logo facebook"></li>
-                        <li><img src="../assets/img/footer-youtube.png" alt="Logo facebook"></li>
-                        <li><img src="../assets/img/footer-pinterest.png" alt="Logo facebook"></li>
-                        <li><img src="../assets/img/footer-periscope.png" alt="Logo facebook"></li>
+                        <li><img src="../assets/img/footer-twitter.png" alt="Logo twitter"></li>
+                        <li><img src="../assets/img/footer-youtube.png" alt="Logo youtube"></li>
+                        <li><img src="../assets/img/footer-pinterest.png" alt="Logo pinterest"></li>
+                        <li><img src="../assets/img/footer-periscope.png" alt="Logo periscope"></li>
                     </ul>
                 </div>
 
