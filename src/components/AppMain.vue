@@ -1,9 +1,14 @@
 <template>
     <main>
+        <div class="jumbo">
+            <img src="../assets/img/jumbotron.jpg" alt="Image Titans">
+        </div>
         <section>
-            <h1> --&gt; Content goes here &lt;-- </h1>
             <div class="items">
                 <Card v-for="element in array" :object=element />
+            </div>
+            <div class="button">
+                <button>LOAD MORE</button>
             </div>
         </section>
     </main>
@@ -105,14 +110,37 @@ main {
     font-family: $font;
 }
 
+.jumbo {
+    height: 300px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
 section {
     @include contain;
     @include distance_section;
 }
 
 .items {
-    padding: 2rem;
+    padding: 1rem 3rem;
     display: flex;
     flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        padding: .5rem 1.5rem;
+        background-color: $light_blue_color;
+        color: $primary_color;
+        font-weight: 600;
+    }
 }
 </style>

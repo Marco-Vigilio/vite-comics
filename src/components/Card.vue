@@ -24,7 +24,6 @@ export default {
 
     .image {
         height: 160px;
-        background-color: rgb(11, 255, 174);
         overflow: hidden;
 
         img {
