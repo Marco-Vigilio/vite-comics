@@ -4,7 +4,7 @@
             <img :src="object.thumb" alt="">
         </div>
         <div class="description">
-            <span>{{ object.series }}</span>
+            <p>{{ object.series }}</p>
         </div>
 
     </div>
@@ -20,17 +20,26 @@ export default {
 <style lang="scss" scoped>
 .item {
     width: calc((100% / 6) - 1rem);
-    background-color: red;
     border: 2px solid black;
     margin: 1rem .5rem;
 
     .image {
-        height: 200px;
-        background-color: aquamarine;
+        height: 195px;
+        background-color: rgb(11, 255, 174);
+        overflow: hidden;
 
         img {
             width: 100%;
             display: block;
+        }
+    }
+
+    .description {
+        margin: 1rem 0;
+
+        p {
+            text-transform: uppercase;
+            font-size: .75rem;
         }
     }
 }
