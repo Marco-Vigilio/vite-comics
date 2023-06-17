@@ -8,24 +8,31 @@
                 Current Series
             </span>
             <div class="items">
-                <Card v-for="element in array" :object=element />
+                <Card v-for="element in arrayComics" :object=element />
             </div>
             <div class="button">
                 <button>LOAD MORE</button>
             </div>
         </section>
+        <div class="informations">
+            <section>
+                <Information v-for="element in arrayInformation" :objectInformation="element" />
+            </section>
+        </div>
     </main>
 </template>
 <script>
 import Card from './Card.vue';
+import Information from './Information.vue';
 export default {
     components: {
         Card,
+        Information,
     },
     name: 'AppMain',
     data() {
         return {
-            array: [
+            arrayComics: [
                 {
                     "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
                     "price": "$19.99",
@@ -99,6 +106,33 @@ export default {
                     "type": "graphic novel",
                 },
             ],
+
+            arrayInformation: [
+                {
+                    "image": "../../src/assets/img/buy-comics-digital-comics.png",
+                    "text": "digital comics",
+                },
+
+                {
+                    "image": "../../src/assets/img/buy-comics-merchandise.png",
+                    "text": "dc merchandise",
+                },
+
+                {
+                    "image": "../../src/assets/img/buy-comics-subscriptions.png",
+                    "text": "subscription",
+                },
+
+                {
+                    "image": "../../src/assets/img/buy-comics-shop-locator.png",
+                    "text": "comic shop locator",
+                },
+
+                {
+                    "image": "../../src/assets/img/buy-dc-power-visa.svg",
+                    "text": "dc power visa",
+                },
+            ],
         }
     },
 }
@@ -136,6 +170,15 @@ section {
         background-color: $light_blue_color;
         font-weight: bold;
         text-transform: uppercase;
+    }
+}
+
+.informations {
+    background-color: $light_blue_color;
+
+    section {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
