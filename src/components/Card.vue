@@ -20,11 +20,10 @@ export default {
 <style lang="scss" scoped>
 .item {
     width: calc((100% / 6) - 1rem);
-    border: 2px solid black;
     margin: 1rem .5rem;
 
     .image {
-        height: 195px;
+        height: 160px;
         background-color: rgb(11, 255, 174);
         overflow: hidden;
 
@@ -39,7 +38,7 @@ export default {
 
         p {
             text-transform: uppercase;
-            font-size: .75rem;
+            font-size: .70rem;
         }
     }
 }
