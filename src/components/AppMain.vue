@@ -4,6 +4,9 @@
             <img src="../assets/img/jumbotron.jpg" alt="Image Titans">
         </div>
         <section>
+            <span>
+                Current Series
+            </span>
             <div class="items">
                 <Card v-for="element in array" :object=element />
             </div>
@@ -123,6 +126,17 @@ main {
 section {
     @include contain;
     @include distance_section;
+    position: relative;
+
+    span {
+        position: absolute;
+        bottom: 97%;
+        left: 2.5rem;
+        padding: .5rem 1.5rem;
+        background-color: $light_blue_color;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
 
 .items {
@@ -140,6 +154,7 @@ section {
         padding: .5rem 1.5rem;
         background-color: $light_blue_color;
         color: $primary_color;
+        font-size: .8rem;
         font-weight: 600;
     }
 }
